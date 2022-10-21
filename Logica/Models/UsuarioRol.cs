@@ -18,6 +18,13 @@ namespace Logica.Models
             DataTable R = new DataTable();
             //darle funcionalidad
 
+            //paso 2.1 y 2.2 de seq usuario rol listar
+            Conexion MICnn = new Conexion();
+
+            //paso 2.3 y 2.4
+            R = MICnn.EjecutarSelect("SPUsuarioRolListar");
+
+
             return R;
 
         }

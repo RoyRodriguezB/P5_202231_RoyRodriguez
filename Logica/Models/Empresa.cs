@@ -24,6 +24,9 @@ namespace Logica.Models
         {
             DataTable R = new DataTable();
             //darle funcionalidad
+            Conexion MICnn = new Conexion();
+
+            R = MICnn.EjecutarSelect("SPEmpresasListar");
 
             return R;
 
